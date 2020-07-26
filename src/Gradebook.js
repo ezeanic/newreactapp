@@ -48,11 +48,6 @@ storeLocally(id, score){
     }
   }
     render() {
-        let i = 0;
-        
-        for(i  = 1; i < 6;i++){
-            this.storeLocally(i, scoreexports[i-1])
-        }
 
         return (
             <div id="homepagedashboard">

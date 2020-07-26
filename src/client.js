@@ -7,16 +7,8 @@ class Client extends Component {
     this.state = {
       data:[0, "", "", "", "", ""]
     };
-    this.Change = this.Change.bind(this);
   } 
 
-  Change(e) {
-    let a = this.state.data;
-    a[e.target.id] = e.target.value;
-    this.setState({
-      data: a
-    });
-  };
 
   render() {
     return (
