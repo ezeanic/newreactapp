@@ -108,6 +108,7 @@ class Home extends React.Component{
     'Engaging properly with best practices with the special needs community.'    
   ];
 
+
     var items = [];
     var sessions = ['Physical', 'Developmental', 'Behavioral/Emotional', 'Sensory Impaired', 'Engagement'];
 

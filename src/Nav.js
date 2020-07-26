@@ -12,7 +12,14 @@ class Nav extends React.Component{
   }
 
   openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
+    var x = window.matchMedia("(max-width: 1000px)");
+    if(x.matches){
+      document.getElementById("mySidenav").style.width = "100%";
+    }else{
+      document.getElementById("mySidenav").style.width = "20%";
+    }
+    
+    
   }
   
   closeNav() {
@@ -30,8 +37,8 @@ class Nav extends React.Component{
     return (
 
     <div>
-      <img id="smartimage" width="15%" src="//static1.squarespace.com/static/5e78ee7048e8012438adabc0/t/5e833304e78b6956d2d8d629/1586360599524/?format=1500w" alt="Smart STAR"></img><br/>
       <div id="openSidenav" className="opensidenav">
+      <img id="smartimage" width="15%" src="//static1.squarespace.com/static/5e78ee7048e8012438adabc0/t/5e833304e78b6956d2d8d629/1586360599524/?format=1500w" alt="Smart STAR"></img><br/>
       <span onClick={this.openNav} style={{color: 'red'}} cursor="pointer">&#9776;</span><br/><br/>
       </div>
       <div id="mySidenav" className="sidenav">
