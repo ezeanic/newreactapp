@@ -13,7 +13,6 @@ import certificate from './certificate';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import ReactDOM from 'react';
 
-const mongoose = require('mongoose');
 
 class App extends React.Component{
   constructor() {
@@ -77,20 +76,9 @@ class App extends React.Component{
   };
   
   render(){
-    let link = `http://localhost:5000/info/${this.state.data[0]}/${this.state.data[1]}/${this.state.data[2]}/${this.state.data[3]}`;
     return(
-      <Router>
-        <form id="overlay-form" style={{display: this.state.formdisplay}} action={link} method="POST">
-          <input id="form-fname" type="text" placeholder="Firstname" name="fname" onChange={this.Change}/><br/><br/>
-          <input id="form-lname" type="text" placeholder="Lastname" name="lname" onChange={this.Change} /><br/><br/>
-          <input id="form-email" type="text" placeholder="Email address" name="email" onChange={this.Change}/><br/><br/>
-          <input id="form-code" type="text" placeholder="Company code" name="code" onChange={this.Change}/><br/><br/>
-          <input type="submit" value="Submit" style={{borderRadius: "1.5rem", padding: "1%", backgroundColor: 'red', color: 'white', width: '15%', textAlign: "center"}} onClick={this.Removeoverlay}/>
-        </form>
-      <div style={this.state.Appstyle} className="App">
-      
+      <Router>      
         <Nav/>
-        <div id="user_name">{this.state.Pagename}</div>
         <Switch>
           <Route path = '/' exact component = {Home}/>
           <Route path = '/sessone' component = {sessone}/>
@@ -103,7 +91,6 @@ class App extends React.Component{
           <Route path = '/client' component = {Client}/>
           <Route path = '/master' component = {Master}/>
         </Switch>
-      </div>
       </Router>
     );
   }
