@@ -124,10 +124,6 @@ class Home extends React.Component{
   }
 }
 
-module.hot.accept('./App', function () {
-  ReactDOM.render(<Home />)
-})
-
 export default App;
 
 

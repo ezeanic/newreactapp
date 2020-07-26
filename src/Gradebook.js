@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {scoreexport} from './components/questions';
 import { Link } from 'react-router-dom';
 
 let scoreexports=[];
@@ -52,7 +51,7 @@ storeLocally(id, score){
         let i = 0;
         
         for(i  = 1; i < 6;i++){
-            this.storeLocally(i, scoreexport[i-1])
+            this.storeLocally(i, scoreexports[i-1])
         }
 
         return (

@@ -11,13 +11,6 @@ class Master extends Component {
     };
   } 
 
-  componentDidMount() {
-    let url = `/api/info/`;
-    fetch(url)
-      .then(res => res.json())
-      .then(info => this.setState({info}, () => console.log('Info fetched...', info)))
-  }
-  
   render() {
     var idchange = this.state.valindex;
     var items = [];

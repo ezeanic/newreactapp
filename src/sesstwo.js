@@ -1,6 +1,5 @@
 import React from 'react';
 import Vid from "./videosummary.mp4"
-import Questions from "./components/questions"
 
 class Answer extends React.Component{
   render() {
@@ -23,7 +22,6 @@ class sesstwo extends React.Component{
             During the “Understanding” lesson, you will learn just how large the population with special needs is, 
             as well as the different types of diagnosis that are included in the term special needs.</p>
           <Answer/>
-          <Questions id={2}/>
         </div>
     </div>
     );
