@@ -1,305 +1,91 @@
-li{
-  text-decoration: none;
-}
 
 *{
   text-align: justify;
   font-size: 100%;
-  /* filter: blur(); */
 }
 
-#smartimage{
-  padding-left: 10%;
-  position: fixed;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+body {
+  background: #2D3142;
+  font-family: 'Raleway', sans-serif;
 }
-
-@media screen and (max-width: 1000px) {
-  #smartimage{
-    padding-left: 11%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #home, #pagetext{
-    font-size: smaller;
-  }
-}
-
-#overlay-form{
-  margin: 5%;
-  padding: 5%;
-  background-color: rgb(253, 237, 237);
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  left: 0;
-  z-index:100;
-  width: 70%;
-  border-radius: 15%;
-  border-style: solid;
-  border-color: rgb(223, 182, 182);
-  margin-top: 10%;
-}
-#overlay-form input{
-  width: 70%;
-  padding: 1%;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  left: 0;
-  border: none;
-  margin-left: 15%;
-  
-}
-
-#homepagedashboard{
-  padding-left: 25%;
-}
-
-body{
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5e78ee7048e8012438adabc0/1585662328256-ALSN9HPT043D46OU0NBI/ke17ZwdGBToddI8pDm48kKAwwdAfKsTlKsCcElEApLR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UegTYNQkRo-Jk4EWsyBNhwKrKLo5CceA1-Tdpfgyxoog5ck0MD3_q0rY3jFJjjoLbQ/3556338.jpg?format=1500w");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
-  width: 100%;
-  text-align: center;
-}
-
-
-#firstpagetext{
-  padding-left: 25%;
-}
-#pagetext{
-  padding: 20px;
-  background-color: white;
-}
-
-#home{
-  padding: 5%;
-  text-align: center;
-  background-color: white;
-}
-
-#user_name{
-  position: fixed;
-  color: #111;
-  padding: 3%;
-  top: 0;
-  right: 0;
-  text-transform: uppercase;
-  font-weight: 500;
-  z-index:-1;
-}
-
-.App {
-  margin: 20px;
-  text-align: center;
-  color: black;
-}
-
-.App-client {
-  padding-left: 20%;
-}
-
-video{
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-#sess:link, #sess:visited {
-  text-decoration: none;
-  background-color: #f64336;
-  color: white;
-  padding: 2.5% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess:hover, #sess:active {
-  background-color: red;
-}
-
-#sess0:link, #sess0:visited {
-  
-  background-color: #f64336;
-  color: #ffffff;
-  padding: 2% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess0:hover, #sess0:active {
-  background-color: red;
-}
-
-#sess1:link, #sess1:visited {
-  
-  background-color: #f64336;
-  color: white;
-  padding: 2% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess1:hover, #sess1:active {
-  background-color: red;
-}
-
-#sess2:link, #sess2:visited {
-  
-  background-color: #f64336;
-  color: white;
-  padding: 2% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess2:hover, #sess2:active {
-  background-color: red;
-}
-
-#sess3:link, #sess3:visited {
-  
-  background-color: #f64336;
-  color: white;
-  padding: 2% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess3:hover, #sess3:active {
-  background-color: red;
-}
-
-#sess4:link, #sess4:visited {
-  
-  background-color: #f64336;
-  color: white;
-  padding: 2% 10%;
-  text-align: center;
-  display: inline-block;
-}
-
-
-#sess4:hover, #sess4:active {
-  background-color: red;
-}
-
 
 span{
-  text-align: "left";
-  padding: 20px;
+  color: white;
+  padding: 30px;
 }
 
-.navlist{ 
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #BFC0C0;
+  margin: 20px 20px 20px 20px;
+  color: #BFC0C0;
+  text-transform: uppercase;
   text-decoration: none;
-  padding: 20px;
-  list-style: none;
-  justify-content: space-around;
+  font-size: .8em;
+  letter-spacing: 1.5px;
   align-items: center;
-  display: flex;
-}
-.questioninput {
-  list-style: none;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.navlist li{
-  text-align: center;
+a {
+  color: #BFC0C0;
   text-decoration: none;
-  display: inline-block;
-  /* font-size: 90%; */
-}
-.navlist a{
-  text-decoration: none;
+  letter-spacing: 1px;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-#cert{
-  width:600px; 
-  height:700px; 
-  padding:20px; 
-  margin-left: 400px;
-  text-align:center; 
-  border: 10px solid gray;
-  background-image: url();
-  background-color: silver;
-}
 
-#certs{
-  width:600px; 
-  height:700px; 
-  text-align:center; 
-  border: 5px solid rgb(51, 51, 51);
-}
+/* First Button */
 
-#certificates {
-  background-color: aqua;
- }
-
-.opensidenav span {
-  height: 100%;
-  width: 3%;
-  font-size: 200%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  text-decoration: none;
-  padding: 8px 8px 8px 32px;
-  font-size: 130%;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
+#arrow-hover {
+  width: 15px;
+  height: 10px;
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  transform: translateX(60px);
+  opacity: 0;
+  -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
+  transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+  margin: 0;
+  padding: 0 5px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+a#button-1:hover img {
+  width: 15px;
+  opacity: 1;
+  transform: translateX(50px);
 }
 
-#table_info td{
-  padding: 1rem;;
-  box-sizing: border-box;
-  background-color: #ff8b83;
+
+/* Second Button */
+
+#button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-#table_info_header td{
-  margin: 3rem;
-  padding: 2rem;
+#button-2 a {
+  position: relative;
+  transition: all .35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-2:hover #slide {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: #2D3142;
 }
